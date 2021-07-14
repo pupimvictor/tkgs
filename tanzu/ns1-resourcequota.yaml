@@ -1,0 +1,54 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: ResourceQuota
+  metadata:
+    creationTimestamp: "2021-07-13T15:05:55Z"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:hard:
+            .: {}
+            f:pacific-gold-storage-policy.storageclass.storage.k8s.io/requests.storage: {}
+          f:used: {}
+      manager: kube-controller-manager
+      operation: Update
+      time: "2021-07-13T15:05:55Z"
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          f:hard:
+            .: {}
+            f:pacific-gold-storage-policy.storageclass.storage.k8s.io/requests.storage: {}
+      manager: wcpsvc
+      operation: Update
+      time: "2021-07-13T15:05:55Z"
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:used:
+            f:pacific-gold-storage-policy.storageclass.storage.k8s.io/requests.storage: {}
+      manager: kube-apiserver
+      operation: Update
+      time: "2021-07-13T15:08:11Z"
+    name: ns1-storagequota
+    namespace: ns1
+    resourceVersion: "15849"
+    selfLink: /api/v1/namespaces/ns1/resourcequotas/vmware-system-registry-613229735-storagequota
+    uid: 59c1fc98-711b-4bac-9ec5-638b40e9bd33
+  spec:
+    hard:
+      pacific-gold-storage-policy.storageclass.storage.k8s.io/requests.storage: 200Gi
+  status:
+    hard:
+      pacific-gold-storage-policy.storageclass.storage.k8s.io/requests.storage: 200Gi
+    used:
+      pacific-gold-storage-policy.storageclass.storage.k8s.io/requests.storage: 200Gi
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
