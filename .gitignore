@@ -1,3 +1,4 @@
+tanzu/cli
 *.plain
 *.tar
 *.zip
